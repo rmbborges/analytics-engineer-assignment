@@ -87,7 +87,7 @@ As for each field, the data type and transformation were determined based on the
 
 ## Task 3: Daily sales
 
-For the `daily_sales` table, the solution was to aggregate the `event_clean` data through the transformation from `event_time` to `date` and the **sum(()), for each day, of the `price` column.
+For the `daily_sales` table, the solution was to aggregate the `event_clean` data through the transformation from `event_time` to `date` and the **sum**, for each day, of the `price` column.
 
 ## Task 4: Daily stats of visitors, sessions, viewers, views, leaders, leads, purchasers and purchases
 
