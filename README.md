@@ -1,5 +1,17 @@
 # Solution of the [Analytics Engineering Assignment](https://github.com/viodotcom/analytics-engineer-assignment) from Vio
 
+To execute the solution for the test:
+
+Build the docker image:
+```
+$ docker build -t viodotcom/assignment .
+```
+
+Run a container interactively with the image:
+```
+$ docker run -it --rm viodotcom/assignment
+``` 
+
 ## Task 1: Ingesting the data
 
 The approach to solving the first task - data ingestion - involved creating an `event_raw` table with the given schema and using the SQLite `.import` command. 
