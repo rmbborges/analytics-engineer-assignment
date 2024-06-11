@@ -5,12 +5,12 @@ task-00-create-event-raw:
 	@sqlite3 db/assignment.db ".read sql/000-create-event-raw.sql"
 	@echo "Finished the first task - created event_raw table"
 
-task-01-import data:task-00-create-event-raw
+task-01-import-data:task-00-create-event-raw
 	@echo "Before importing, creating a temporary single file for data from all files in the landing zone"
 	@sqlite3 db/assignment.db ".read sql/010-import-data.sql"
 	@echo "Finished the first task - created event_raw and imported both files data"
 
-task-02-clean-data:task-01-import
+task-02-clean-data:task-01-import-data
 	@echo "Importing all data into event_clean table"
 	@sqlite3 db/assignment.db ".read sql/020-clean-data.sql"
 	@echo "Finished the second task - generated event_clean table"

@@ -148,3 +148,11 @@ What changes can we make to this data pipeline to ensure greater consistency? Th
 9. Finally, update `daily_funnel` table.
 
 Of course, since we are working with a SQLite database, this approach still has limitations regarding data volume. It is more advisable to execute this in more robust data warehouses. This approach addresses the lack of consistency when new data arrives or when we must update an already processed period. However, it also considerably increases the load on the downstream tables
+
+## Changelog
+### 2024-06-09
+- Submitted solution
+### 2024-06-10
+- Fixed a typo in `README`
+### 2024-06-11
+- Fixed a typo in `Makefile` in import data task (everything was strangely working, now it seems better)
